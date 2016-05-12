@@ -2,8 +2,21 @@
 ## functions do
 
 ## Write a short comment describing this function
+## this function provides the basic methods to manage a cached matrix, namely set and get
+## and two methods to set and get the inverse version of it
 
 makeCacheMatrix <- function(x = matrix()) {
+	m <- NULL
+        set <- function(y) {
+                x <<- y
+                m <<- NULL
+        }
+        get <- function() x
+        setinverse <- function(inverse) m <<- inverse
+        getinverse <- function() m
+        list(set = set, get = get,
+             setinverse = setinverse,
+             getinverse = getinverse)
 
 }
 
