@@ -13,11 +13,7 @@
 # delta2 <- t3 - t2 #..this is the time required to retrieve the cached value of the same matrix
 #######
 
-<<<<<<< HEAD
 
-=======
-## Write a short comment describing this function
->>>>>>> f3f4af644ae7cec67cb4469c371f3c8eddf4b681
 ## this function provides the basic methods to manage a cached matrix, namely set and get
 ## and two methods to set and get the inverse version 
 
