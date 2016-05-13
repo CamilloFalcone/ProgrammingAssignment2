@@ -1,7 +1,19 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These functions provide a mean to cache the result of a matrix inversion 
+## They are suitable in algorithms where the inversion process on the same matrix if often performed
+##### THIS IS JUST AN EXAMPLE OF USE WITH SOME COMMENTS...
+# n<-10 # if would be possible to build a loop on n to check if the advantege in the use of a cached value increases with the matrix size
+# k<-matrix(rnorm(n*n),n,n) # k is the original matrix
+# M<-makeCacheMatrix(k) # M is the CacheMatrix version of k
+# t1<-Sys.time() #..the system time just before the first call
+# cacheSolve(M) # the first inversion, the value isn't yet cached
+# t2 <-Sys.time() #..the syste time when the inversion is complete
+# cacheSolve(M) #..here the cache value is returned
+# t3 <- Sys.time() #..the final time stamp
+# delta1 <- t2 - t1 #..this is the time required to invert the matrix when the solve function is used
+# delta2 <- t3 - t2 #..this is the time required to retrieve the cached value of the same matrix
+#######
 
-## Write a short comment describing this function
+
 ## this function provides the basic methods to manage a cached matrix, namely set and get
 ## and two methods to set and get the inverse version 
 
